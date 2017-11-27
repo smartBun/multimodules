@@ -4,6 +4,9 @@
   <artifactId>multimodules</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <name>Springboot</name>
+  <description>Springboot Learning Project</description>
+  
   <modules>
   	<module>multimodules-core</module>
   	<module>multimodules-web</module>
