@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
 	
     @RequestMapping("/")
-    public ResponseEntity<?> getSexAll() {
+    public ResponseEntity<?> helloWorld() {
 
-        ResponseEntity<String> responseEntity = new ResponseEntity<>("Hello World!", HttpStatus.OK);
+        ResponseEntity<String> responseEntity = new ResponseEntity<>("Hello World!!!", HttpStatus.OK);
 
         return responseEntity;
     }
