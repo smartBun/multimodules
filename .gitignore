@@ -7,3 +7,6 @@
 /multimodules-web/.classpath
 /multimodules-web/.project
 /.idea
+/multimodules-core/*.iml
+/multimodules-web/multimodules-web.iml
+/*.iml
