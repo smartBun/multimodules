@@ -32,8 +32,8 @@ public class ApplicationTest {
 	}
 
 	@Test
-	public void test() throws Exception {
-		RequestBuilder request = null;
+	public void testMainController() throws Exception {
+		RequestBuilder request;
 
 		request = get("/");
 		mvc.perform(request)
