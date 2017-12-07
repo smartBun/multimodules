@@ -25,10 +25,8 @@ public class ApplicationTest {
 	private MockMvc mvc;
 
 	@Before
-	public void setUp() throws Exception {
-		mvc = MockMvcBuilders.standaloneSetup(
-				new MainController()).build();
-
+	public void setUp() {
+		mvc = MockMvcBuilders.standaloneSetup(new MainController()).build();
 	}
 
 	@Test
