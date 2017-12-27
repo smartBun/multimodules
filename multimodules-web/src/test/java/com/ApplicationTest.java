@@ -1,4 +1,4 @@
-package com.test;
+package com;
 
 import com.controller.MainController;
 import org.junit.Before;
