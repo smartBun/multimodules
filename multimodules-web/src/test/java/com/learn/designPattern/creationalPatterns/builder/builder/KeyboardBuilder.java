@@ -1,9 +1,9 @@
-package designPattern.creationalPatterns.builder.builder;
+package com.learn.designPattern.creationalPatterns.builder.builder;
 
-import designPattern.creationalPatterns.builder.meterial.AxisBrand;
-import designPattern.creationalPatterns.builder.meterial.KeycapMeterial;
-import designPattern.creationalPatterns.builder.meterial.PCBType;
-import designPattern.creationalPatterns.builder.meterial.ShellMeterial;
+import com.learn.designPattern.creationalPatterns.builder.meterial.AxisBrand;
+import com.learn.designPattern.creationalPatterns.builder.meterial.KeycapMeterial;
+import com.learn.designPattern.creationalPatterns.builder.meterial.PCBType;
+import com.learn.designPattern.creationalPatterns.builder.meterial.ShellMeterial;
 
 public interface KeyboardBuilder {
 	public KeyboardBuilder keycap(KeycapMeterial keycap);

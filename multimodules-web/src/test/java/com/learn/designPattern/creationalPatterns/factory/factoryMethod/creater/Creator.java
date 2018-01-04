@@ -1,7 +1,7 @@
-package designPattern.creationalPatterns.factory.factoryMethod.creater;
+package com.learn.designPattern.creationalPatterns.factory.factoryMethod.creater;
 
-import designPattern.creationalPatterns.factory.factoryMethod.product.ProductID;
-import designPattern.creationalPatterns.factory.factoryMethod.product.Writable;
+import com.learn.designPattern.creationalPatterns.factory.factoryMethod.product.ProductID;
+import com.learn.designPattern.creationalPatterns.factory.factoryMethod.product.Writable;
 
 /**
  * <p>

@@ -1,7 +1,7 @@
-package designPattern.creationalPatterns.factory.simpleFactory.client;
+package com.learn.designPattern.creationalPatterns.factory.simpleFactory.client;
 
-import designPattern.creationalPatterns.factory.simpleFactory.concreteProduct.Apple;
-import designPattern.creationalPatterns.factory.simpleFactory.simpleFactory.SimpleFactory;
+import com.learn.designPattern.creationalPatterns.factory.simpleFactory.concreteProduct.Apple;
+import com.learn.designPattern.creationalPatterns.factory.simpleFactory.simpleFactory.SimpleFactory;
 
 /**
  * Created by Yang on 2017/11/3.

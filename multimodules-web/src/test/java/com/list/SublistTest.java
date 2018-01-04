@@ -5,6 +5,11 @@ import java.util.List;
 
 public class SublistTest {
     public static void main(String[] args) {
+        //testList();
+        System.out.println();
+    }
+
+    private static void testList() {
         ArrayList<String> oldList = new ArrayList<>();
         oldList.add("aaa");
         oldList.add("bbb");

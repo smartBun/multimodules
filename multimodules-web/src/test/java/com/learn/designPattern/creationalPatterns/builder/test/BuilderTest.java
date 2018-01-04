@@ -1,12 +1,12 @@
-package designPattern.creationalPatterns.builder.test;
+package com.learn.designPattern.creationalPatterns.builder.test;
 
-import designPattern.creationalPatterns.builder.concreteBuilder.DiyKeyboardBuilder;
-import designPattern.creationalPatterns.builder.director.Director;
-import designPattern.creationalPatterns.builder.meterial.AxisBrand;
-import designPattern.creationalPatterns.builder.meterial.KeycapMeterial;
-import designPattern.creationalPatterns.builder.meterial.PCBType;
-import designPattern.creationalPatterns.builder.meterial.ShellMeterial;
-import designPattern.creationalPatterns.builder.product.DiyKeyboard;
+import com.learn.designPattern.creationalPatterns.builder.concreteBuilder.DiyKeyboardBuilder;
+import com.learn.designPattern.creationalPatterns.builder.director.Director;
+import com.learn.designPattern.creationalPatterns.builder.meterial.AxisBrand;
+import com.learn.designPattern.creationalPatterns.builder.meterial.KeycapMeterial;
+import com.learn.designPattern.creationalPatterns.builder.meterial.PCBType;
+import com.learn.designPattern.creationalPatterns.builder.meterial.ShellMeterial;
+import com.learn.designPattern.creationalPatterns.builder.product.DiyKeyboard;
 
 public class BuilderTest {
 	public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package designPattern.creationalPatterns.factory.factoryMethod.concreteProduct;
+package com.learn.designPattern.creationalPatterns.factory.factoryMethod.concreteProduct;
 
-import designPattern.creationalPatterns.factory.factoryMethod.product.Writable;
+import com.learn.designPattern.creationalPatterns.factory.factoryMethod.product.Writable;
 
 public class BallPen implements Writable {
 

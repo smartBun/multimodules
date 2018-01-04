@@ -1,7 +1,7 @@
-package designPattern.creationalPatterns.factory.abstractFactory.concreteProduct;
+package com.learn.designPattern.creationalPatterns.factory.abstractFactory.concreteProduct;
 
-import designPattern.creationalPatterns.factory.abstractFactory.abstractProduct.AbstractPeripheralProduct;
-import designPattern.creationalPatterns.factory.abstractFactory.abstractProduct.OutputAble;
+import com.learn.designPattern.creationalPatterns.factory.abstractFactory.abstractProduct.AbstractPeripheralProduct;
+import com.learn.designPattern.creationalPatterns.factory.abstractFactory.abstractProduct.OutputAble;
 
 public class Display extends AbstractPeripheralProduct implements OutputAble {
 

@@ -1,7 +1,7 @@
-package designPattern.creationalPatterns.factory.simpleFactory.simpleFactory;
+package com.learn.designPattern.creationalPatterns.factory.simpleFactory.simpleFactory;
 
-import designPattern.creationalPatterns.factory.simpleFactory.concreteProduct.Apple;
-import designPattern.creationalPatterns.factory.simpleFactory.concreteProduct.Orange;
+import com.learn.designPattern.creationalPatterns.factory.simpleFactory.concreteProduct.Apple;
+import com.learn.designPattern.creationalPatterns.factory.simpleFactory.concreteProduct.Orange;
 
 public class SimpleFactory {
   

@@ -1,10 +1,10 @@
-package designPattern.creationalPatterns.builder.director;
+package com.learn.designPattern.creationalPatterns.builder.director;
 
-import designPattern.creationalPatterns.builder.builder.KeyboardBuilder;
-import designPattern.creationalPatterns.builder.meterial.AxisBrand;
-import designPattern.creationalPatterns.builder.meterial.KeycapMeterial;
-import designPattern.creationalPatterns.builder.meterial.PCBType;
-import designPattern.creationalPatterns.builder.meterial.ShellMeterial;
+import com.learn.designPattern.creationalPatterns.builder.builder.KeyboardBuilder;
+import com.learn.designPattern.creationalPatterns.builder.meterial.AxisBrand;
+import com.learn.designPattern.creationalPatterns.builder.meterial.KeycapMeterial;
+import com.learn.designPattern.creationalPatterns.builder.meterial.PCBType;
+import com.learn.designPattern.creationalPatterns.builder.meterial.ShellMeterial;
 
 public class Director {
 	private KeyboardBuilder keyboardBuilder = null;

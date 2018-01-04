@@ -1,11 +1,11 @@
-package designPattern.creationalPatterns.builder.concreteBuilder;
+package com.learn.designPattern.creationalPatterns.builder.concreteBuilder;
 
-import designPattern.creationalPatterns.builder.builder.KeyboardBuilder;
-import designPattern.creationalPatterns.builder.meterial.AxisBrand;
-import designPattern.creationalPatterns.builder.meterial.KeycapMeterial;
-import designPattern.creationalPatterns.builder.meterial.PCBType;
-import designPattern.creationalPatterns.builder.meterial.ShellMeterial;
-import designPattern.creationalPatterns.builder.product.DiyKeyboard;
+import com.learn.designPattern.creationalPatterns.builder.builder.KeyboardBuilder;
+import com.learn.designPattern.creationalPatterns.builder.meterial.AxisBrand;
+import com.learn.designPattern.creationalPatterns.builder.meterial.KeycapMeterial;
+import com.learn.designPattern.creationalPatterns.builder.meterial.PCBType;
+import com.learn.designPattern.creationalPatterns.builder.meterial.ShellMeterial;
+import com.learn.designPattern.creationalPatterns.builder.product.DiyKeyboard;
 
 public class DiyKeyboardBuilder implements KeyboardBuilder{
 	private DiyKeyboard diyKeyboard;

@@ -1,6 +1,6 @@
-package designPattern.creationalPatterns.factory.simpleFactory.concreteProduct;
+package com.learn.designPattern.creationalPatterns.factory.simpleFactory.concreteProduct;
 
-import designPattern.creationalPatterns.factory.simpleFactory.AbstractProduct.edible;
+import com.learn.designPattern.creationalPatterns.factory.simpleFactory.AbstractProduct.edible;
 
 public class Apple implements edible {
   

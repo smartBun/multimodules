@@ -1,7 +1,7 @@
-package designPattern.creationalPatterns.factory.abstractFactory.abstractFactory;
+package com.learn.designPattern.creationalPatterns.factory.abstractFactory.abstractFactory;
 
-import designPattern.creationalPatterns.factory.abstractFactory.abstractProduct.InputAble;
-import designPattern.creationalPatterns.factory.abstractFactory.abstractProduct.OutputAble;
+import com.learn.designPattern.creationalPatterns.factory.abstractFactory.abstractProduct.InputAble;
+import com.learn.designPattern.creationalPatterns.factory.abstractFactory.abstractProduct.OutputAble;
 
 /**
  * <p>

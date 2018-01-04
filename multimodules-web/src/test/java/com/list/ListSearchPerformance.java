@@ -25,10 +25,10 @@ public class ListSearchPerformance {
         ListSearchPerformance.values = Arrays.asList(values);
     }
 
-    private static long timeList(List lst) {
+    private static long timeList(List list) {
         long start = System.currentTimeMillis();
         for (int i = 0; i < N; i++) {
-            int index = Collections.binarySearch(lst, values.get(i));
+            int index = Collections.binarySearch(list, values.get(i));
             if (index != i) {
                 System.out.println("*** Error ***");
             }
@@ -37,7 +37,7 @@ public class ListSearchPerformance {
     }
 
     public static void main(String args[]) {
-        System.out.println("ArrayList time spent：" + timeList(new ArrayList(values)));
-        System.out.println("LinkedList time spent：" + timeList(new LinkedList(values)));
+        System.out.println("ArrayList time spent：" + timeList(new ArrayList(values)) + " ms");
+        System.out.println("LinkedList time spent：" + timeList(new LinkedList(values)) + "ms");
     }
 }  

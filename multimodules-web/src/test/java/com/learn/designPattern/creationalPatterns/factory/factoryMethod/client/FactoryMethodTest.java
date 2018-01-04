@@ -1,9 +1,9 @@
-package designPattern.creationalPatterns.factory.factoryMethod.client;
+package com.learn.designPattern.creationalPatterns.factory.factoryMethod.client;
 
-import designPattern.creationalPatterns.factory.factoryMethod.concreteCreater.PenCreator;
-import designPattern.creationalPatterns.factory.factoryMethod.product.ProductID;
-import designPattern.creationalPatterns.factory.factoryMethod.creater.Creator;
-import designPattern.creationalPatterns.factory.factoryMethod.product.Writable;
+import com.learn.designPattern.creationalPatterns.factory.factoryMethod.concreteCreater.PenCreator;
+import com.learn.designPattern.creationalPatterns.factory.factoryMethod.product.ProductID;
+import com.learn.designPattern.creationalPatterns.factory.factoryMethod.creater.Creator;
+import com.learn.designPattern.creationalPatterns.factory.factoryMethod.product.Writable;
 
 public class FactoryMethodTest {
 	public static void main(String[] args) {

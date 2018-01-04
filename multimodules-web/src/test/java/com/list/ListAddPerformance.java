@@ -15,7 +15,7 @@ public class ListAddPerformance {
     }
 
     public static void main(String[] args) {
-        System.out.println("ArrayList time spent:" + timeList(new ArrayList()));
-        System.out.println("LinkedList time spent:" + timeList(new LinkedList()));
+        System.out.println("ArrayList time spent:" + timeList(new ArrayList()) + " ms");
+        System.out.println("LinkedList time spent:" + timeList(new LinkedList()) + " ms");
     }
-}  
+}

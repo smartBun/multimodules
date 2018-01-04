@@ -1,12 +1,12 @@
-package designPattern.creationalPatterns.factory.abstractFactory.concreteFactory;
+package com.learn.designPattern.creationalPatterns.factory.abstractFactory.concreteFactory;
 
-import designPattern.creationalPatterns.factory.abstractFactory.abstractFactory.PeripheralFactory;
-import designPattern.creationalPatterns.factory.abstractFactory.abstractProduct.InputAble;
-import designPattern.creationalPatterns.factory.abstractFactory.abstractProduct.OutputAble;
-import designPattern.creationalPatterns.factory.abstractFactory.concreteProduct.Display;
-import designPattern.creationalPatterns.factory.abstractFactory.concreteProduct.Keyboard;
-import designPattern.creationalPatterns.factory.abstractFactory.concreteProduct.Mouse;
-import designPattern.creationalPatterns.factory.abstractFactory.concreteProduct.VoiceBox;
+import com.learn.designPattern.creationalPatterns.factory.abstractFactory.abstractFactory.PeripheralFactory;
+import com.learn.designPattern.creationalPatterns.factory.abstractFactory.abstractProduct.InputAble;
+import com.learn.designPattern.creationalPatterns.factory.abstractFactory.abstractProduct.OutputAble;
+import com.learn.designPattern.creationalPatterns.factory.abstractFactory.concreteProduct.Display;
+import com.learn.designPattern.creationalPatterns.factory.abstractFactory.concreteProduct.Keyboard;
+import com.learn.designPattern.creationalPatterns.factory.abstractFactory.concreteProduct.Mouse;
+import com.learn.designPattern.creationalPatterns.factory.abstractFactory.concreteProduct.VoiceBox;
 
 public class ConcreteFactory2 extends PeripheralFactory{
 	
