@@ -1,5 +1,5 @@
 package com.learn.designPattern.creationalPatterns.builder.meterial;
 
-public enum ShellMeterial {
+public enum ShellMaterial {
 	ALUMINUM,PLASTIC
 }

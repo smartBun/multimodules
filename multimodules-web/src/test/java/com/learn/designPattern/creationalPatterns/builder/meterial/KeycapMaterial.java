@@ -1,5 +1,5 @@
 package com.learn.designPattern.creationalPatterns.builder.meterial;
 
-public enum KeycapMeterial {
+public enum KeycapMaterial {
 	ABS,PBT,POM
 }

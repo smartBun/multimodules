@@ -2,16 +2,16 @@ package com.learn.designPattern.creationalPatterns.builder.product;
 
 import com.learn.designPattern.creationalPatterns.builder.concreteBuilder.DiyKeyboardBuilder;
 import com.learn.designPattern.creationalPatterns.builder.meterial.AxisBrand;
-import com.learn.designPattern.creationalPatterns.builder.meterial.KeycapMeterial;
+import com.learn.designPattern.creationalPatterns.builder.meterial.KeycapMaterial;
 import com.learn.designPattern.creationalPatterns.builder.meterial.PCBType;
-import com.learn.designPattern.creationalPatterns.builder.meterial.ShellMeterial;
+import com.learn.designPattern.creationalPatterns.builder.meterial.ShellMaterial;
 
 public class DiyKeyboard implements Keyboard{
 	
-	public KeycapMeterial keycap;
+	public KeycapMaterial keycap;
 	public AxisBrand axis;
 	public PCBType pcb;
-	public ShellMeterial shell;
+	public ShellMaterial shell;
 
 	public DiyKeyboard(DiyKeyboardBuilder diyKeyboardBuilder) {
 		setKeycap(diyKeyboardBuilder.keycap);
@@ -21,7 +21,7 @@ public class DiyKeyboard implements Keyboard{
 	}
 
 	@Override
-	public void setKeycap(KeycapMeterial keycap) {
+	public void setKeycap(KeycapMaterial keycap) {
 		this.keycap = keycap;
 	}
 
@@ -36,11 +36,11 @@ public class DiyKeyboard implements Keyboard{
 	}
 
 	@Override
-	public void setShell(ShellMeterial shell) {
+	public void setShell(ShellMaterial shell) {
 		this.shell = shell;
 	}
 
-	public KeycapMeterial getKeycap() {
+	public KeycapMaterial getKeycap() {
 		return keycap;
 	}
 
@@ -52,7 +52,7 @@ public class DiyKeyboard implements Keyboard{
 		return pcb;
 	}
 
-	public ShellMeterial getShell() {
+	public ShellMaterial getShell() {
 		return shell;
 	}
 	
