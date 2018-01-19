@@ -4,8 +4,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "testtable")
-public class TestTable implements Serializable{
+@Table(name = "coretable")
+public class CoreTable implements Serializable{
 
 
     @Id

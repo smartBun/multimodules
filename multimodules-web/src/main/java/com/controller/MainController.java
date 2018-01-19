@@ -1,34 +1,27 @@
 package com.controller;
 
-import com.dao.TestTableRepository;
-import com.entities.TestTable;
+import com.dao.CoreTableRepository;
+import com.entities.CoreTable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/")
 public class MainController {
 
     @Autowired
-    private TestTableRepository repo;
+    private CoreTableRepository repo2;
 
     @RequestMapping("/")
     public ResponseEntity<?> helloWorld() {
 
         ResponseEntity<String> responseEntity = new ResponseEntity<>("Hello World!!!", HttpStatus.OK);
 
-        TestTable data = repo.findOne(1L);
-        List<TestTable> ids = repo.findAll();
-        List<TestTable> data2 = repo.findDataByValue("456");
+        CoreTable data = repo2.findOne(1L);
         System.out.println(data);
-        System.out.println(ids);
-        System.out.println(data2);
-
 
         return responseEntity;
     }
