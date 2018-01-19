@@ -2,9 +2,9 @@ package com.learn.designPattern.creationalPatterns.singleton.enumSingleton;
 
 public class EnumSingleton {
 
-    private EnumSingleton(){}
+    private EnumSingleton() {}
 
-    public static EnumSingleton getInstance(){
+    public static EnumSingleton getInstance() {
         return Singleton.Instance.getInstance();
     }
 
