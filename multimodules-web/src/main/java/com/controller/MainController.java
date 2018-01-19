@@ -18,11 +18,11 @@ public class MainController {
     @RequestMapping("/")
     public ResponseEntity<?> helloWorld() {
 
-        ResponseEntity<String> responseEntity = new ResponseEntity<>("Hello World!!!", HttpStatus.OK);
 
         CoreTable data = repo2.findOne(1L);
         System.out.println(data);
 
+        ResponseEntity<String> responseEntity = new ResponseEntity<>("Hello World!!!", HttpStatus.OK);
         return responseEntity;
     }
 }
