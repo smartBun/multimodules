@@ -1,2 +1,1 @@
-# multimodules
-- learning about multi modules maven project
+test feature
