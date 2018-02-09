@@ -20,9 +20,9 @@ public class MainController {
 
 
         CoreTable data = repo2.findOne(1L);
-        System.out.println(data);
+        System.out.println(data.getId());
+        System.out.println(data.getValue());
 
-        ResponseEntity<String> responseEntity = new ResponseEntity<>("Hello World!!!", HttpStatus.OK);
-        return responseEntity;
+        return new ResponseEntity<>("Hello World!!!", HttpStatus.OK);
     }
 }
