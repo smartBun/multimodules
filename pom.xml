@@ -13,7 +13,6 @@
         <module>multimodules-core</module>
     </modules>
 
-    <!-- Inherit defaults from Spring Boot -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

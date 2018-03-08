@@ -31,7 +31,6 @@
             <version>5.0.12.Final</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.quartz-scheduler/quartz -->
         <dependency>
             <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz</artifactId>
