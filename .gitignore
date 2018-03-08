@@ -10,3 +10,5 @@
 /multimodules-core/*.iml
 /multimodules-web/multimodules-web.iml
 /*.iml
+/frontend/package-lock.json
+/frontend/node_modules
