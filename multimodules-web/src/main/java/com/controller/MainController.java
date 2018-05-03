@@ -28,6 +28,6 @@ public class MainController {
         System.out.println(data.getValue());
         logger.info("\n==>    ID : " + data.getId() + "\n==> value : " + data.getValue());
 
-        return new ResponseEntity<>("<h1>Hello World!!!<h1>", HttpStatus.OK);
+        return new ResponseEntity<>("A message from server side.", HttpStatus.OK);
     }
 }
