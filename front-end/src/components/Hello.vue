@@ -3,7 +3,7 @@
     <h1>site : {{site}}</h1>
     <h1>Server Message : {{sm}}</h1>
     <h1>{{ msg() }}</h1>
-    <button @click="testMethod" type="text" size="large">Edit</button>
+    <button @click="testMethod" type="text" size="large">Get Message from server</button>
   </div>
 </template>
 

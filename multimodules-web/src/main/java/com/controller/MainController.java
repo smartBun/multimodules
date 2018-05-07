@@ -21,7 +21,7 @@ public class MainController {
 
     @RequestMapping("/")
     public ResponseEntity<?> helloWorld() {
-
+        // test
 
         CoreTable data = repo2.findOne(1L);
         System.out.println(data.getId());
