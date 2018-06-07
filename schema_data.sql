@@ -9,6 +9,13 @@
 --    value VARCHAR(255)
 --  );
 
-INSERT INTO coretable (value) VALUES ("123");
+--  CREATE TABLE user
+--  (
+--    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+--    username varchar NOT NULL,
+--    password varchar NOT NULL
+--  );
 
-INSERT INTO coretable(value) VALUES ("456");
+INSERT INTO user (username, password) VALUES ("liyang1", "pppp1");
+INSERT INTO user (username, password) VALUES ("liyang2", "pppp2");
+
