@@ -8,16 +8,18 @@
     <name>Springboot</name>
     <description>Springboot Learning Project</description>
 
-    <modules>
-        <module>multimodules-web</module>
-        <module>multimodules-core</module>
-    </modules>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.4.0.RELEASE</version>
     </parent>
+
+    <modules>
+        <module>multimodules-core</module>
+        <module>multimodules-web</module>
+    </modules>
+
+
 
     <build>
         <plugins>
@@ -55,6 +57,30 @@
             </resource>
         </resources>
     </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-security</artifactId>
+                <version>1.5.9.RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>0.9.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 
     <properties>
         <java.version>1.8</java.version>
