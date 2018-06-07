@@ -35,10 +35,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
             <!-- mybatis generator : mybatis 代码生成 -->
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
