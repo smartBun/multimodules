@@ -10,7 +10,7 @@ public class MyApplicationContextListener implements ApplicationListener<Context
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
-        QuartzInitializer.start();
-        System.out.println("==> Application Context Refreshed.");
+//        QuartzInitializer.start();
+//        System.out.println("==> Application Context Refreshed.");
     }
 }

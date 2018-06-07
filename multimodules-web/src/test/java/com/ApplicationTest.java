@@ -1,6 +1,6 @@
 package com;
 
-import com.controller.MainController;
+import com.controller.UserController;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,14 +26,14 @@ public class ApplicationTest {
 
 	@Before
 	public void setUp() {
-		mvc = MockMvcBuilders.standaloneSetup(new MainController()).build();
+		mvc = MockMvcBuilders.standaloneSetup(new UserController()).build();
 	}
 
 	@Test
 	public void testMainController() throws Exception {
 		RequestBuilder request;
 
-		request = get("/");
+		request = get("/user/all");
 		mvc.perform(request)
 				.andExpect(status().isOk())
 				.andExpect(content().string(equalTo("Hello World!!!")));

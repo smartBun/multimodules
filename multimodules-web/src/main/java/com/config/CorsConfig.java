@@ -12,7 +12,7 @@ import static org.springframework.web.cors.CorsConfiguration.ALL;
  * CORS configuration
  */
 @Configuration
-public class CORSConfig {
+public class CorsConfig {
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {
