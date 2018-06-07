@@ -21,20 +21,20 @@ class TokenAuthenticationService {
     private static final String TOKEN_PREFIX = "Bearer";        // Token前缀
     private static final String HEADER_STRING = "Authorization";// 存放Token的Header Key
 
-  // JWT生成方法
+    // JWT生成方法
     static void addAuthentication(HttpServletResponse response, String username) {
 
-    // 生成JWT
+        // 生成JWT
         String JWT = Jwts.builder()
                 // 保存权限（角色）
                 .claim("authorities", "ROLE_ADMIN,AUTH_WRITE")
                 // 用户名写入标题
                 .setSubject(username)
                 // 有效期设置
-                        .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
+                .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
                 // 签名设置
-                        .signWith(SignatureAlgorithm.HS512, SECRET)
-                        .compact();
+                .signWith(SignatureAlgorithm.HS512, SECRET)
+                .compact();
 
         // 将 JWT 写入 body
         try {
@@ -46,7 +46,7 @@ class TokenAuthenticationService {
         }
     }
 
-  // JWT验证方法
+    // JWT验证方法
     static Authentication getAuthentication(HttpServletRequest request) {
         // 从Header中拿到token
         String token = request.getHeader(HEADER_STRING);
@@ -64,7 +64,7 @@ class TokenAuthenticationService {
             String user = claims.getSubject();
 
             // 得到 权限（角色）
-            List<GrantedAuthority> authorities =  AuthorityUtils.commaSeparatedStringToAuthorityList((String) claims.get("authorities"));
+            List<GrantedAuthority> authorities = AuthorityUtils.commaSeparatedStringToAuthorityList((String) claims.get("authorities"));
 
             // 返回验证令牌
             return user != null ?

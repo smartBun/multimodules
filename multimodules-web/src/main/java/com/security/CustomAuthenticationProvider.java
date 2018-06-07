@@ -8,6 +8,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 
 import java.util.ArrayList;
+import java.util.List;
 
 // 自定义身份认证验证组件
 class CustomAuthenticationProvider implements AuthenticationProvider {
@@ -21,13 +22,12 @@ class CustomAuthenticationProvider implements AuthenticationProvider {
         // 认证逻辑
         if (name.equals("admin") && password.equals("123456")) {
             // 这里设置权限和角色
-            ArrayList<GrantedAuthority> authorities = new ArrayList<>();
-            authorities.add( new GrantedAuthorityImpl("ROLE_ADMIN") );
-            authorities.add( new GrantedAuthorityImpl("AUTH_WRITE") );
+            List<GrantedAuthority> authorities = new ArrayList<>();
+            authorities.add(new GrantedAuthorityImpl("ROLE_ADMIN"));
+            authorities.add(new GrantedAuthorityImpl("AUTH_WRITE"));
             // 生成令牌
-            Authentication auth = new UsernamePasswordAuthenticationToken(name, password, authorities);
-            return auth;
-        }else {
+            return new UsernamePasswordAuthenticationToken(name, password, authorities);
+        } else {
             throw new BadCredentialsException("密码错误~");
         }
     }
