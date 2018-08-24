@@ -1,10 +1,13 @@
 package com;
 
 import java.io.IOException;
+import java.util.function.IntConsumer;
 
 public class ExceptionTest extends Throwable {
 
 	public static void main(String[] args) throws Exception {
+		IntConsumer aNew = int[]::new;
+
 		try{
 			throw new Exception("1");
 		}catch (IOException e){

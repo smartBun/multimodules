@@ -19,8 +19,6 @@
         <module>multimodules-web</module>
     </modules>
 
-
-
     <build>
         <plugins>
             <plugin>
@@ -57,22 +55,6 @@
             </resource>
         </resources>
     </build>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-security</artifactId>
-                <version>1.5.9.RELEASE</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.jsonwebtoken</groupId>
-                <artifactId>jjwt</artifactId>
-                <version>0.9.0</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <dependencies>
         <dependency>

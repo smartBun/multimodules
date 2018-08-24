@@ -27,16 +27,16 @@ class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {
     @Override
     public Authentication attemptAuthentication(
             HttpServletRequest req, HttpServletResponse res)
-            throws AuthenticationException, IOException, ServletException {
+            throws AuthenticationException, IOException {
 
         // JSON反序列化成 User
-        User creds = new ObjectMapper().readValue(req.getInputStream(), User.class);
+        User user = new ObjectMapper().readValue(req.getInputStream(), User.class);
 
         // 返回一个验证令牌
         return getAuthenticationManager().authenticate(
                 new UsernamePasswordAuthenticationToken(
-                        creds.getUsername(),
-                        creds.getPassword()
+                        user.getUsername(),
+                        user.getPassword()
                 )
         );
     }
@@ -45,7 +45,7 @@ class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {
     protected void successfulAuthentication(
             HttpServletRequest req,
             HttpServletResponse res, FilterChain chain,
-            Authentication auth) throws IOException, ServletException {
+            Authentication auth) {
 
         TokenAuthenticationService.addAuthentication(res, auth.getName());
     }
@@ -56,6 +56,6 @@ class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {
 
         response.setContentType("application/json");
         response.setStatus(HttpServletResponse.SC_OK);
-        response.getOutputStream().println(JSONResult.fillResultString(500, "Internal Server Error!!!", JSONObject.NULL));
+        response.getOutputStream().println(JSONResult.fillResultString(500, "Internal Server Error!!!", "Try，user-admin, password-123456 to login"));
     }
 }
